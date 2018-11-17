@@ -15,8 +15,7 @@ document.getElementById('illustrator').addEventListener('mouseover', function(){
     illustratorAnimation.play(); 
 })
 
-document.getElementById('illustrator').addEventListener('mouseleave', function(){ 
-z
+document.getElementById('illustrator').addEventListener('mouseleave', function(){
 illustratorAnimation.setDirection(-1); 
 illustratorAnimation.play(); 
 })

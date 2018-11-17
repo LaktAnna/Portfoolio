@@ -14,14 +14,8 @@ body {
 }
 
 #video {
-  max-width:860px;    
   position: relative; 
   }
-
-#button {
-  height: 100%;
-  width: 100%;
-}
 
 #animMouseOut {
   z-index: 2;
@@ -31,21 +25,22 @@ body {
 #animOnHover {
   position: absolute;
   z-index: 3;
-  max-width: 100%;
+  width: 100%;
 }
 
 #button {
   position: absolute;
   z-index: 4;
-  padding: 5% 22% 5% 22%;
   color: thistle;
   opacity: 0;
+  height: 100%;
+  width: 100%;
 }
 
 #background {
   position: absolute;
   z-index: 5;
-  max-width: 48%;
+  width: 48%;
 }
 
 #facebook {
@@ -86,21 +81,20 @@ body {
     }
 
   #animMouseOut,  #button{
-    max-width: 100%;
+    width: 100%;
   }
 
   #animOnHover {
-    max-width: 96%;
+    width: 100%;
   }
 
  #video {
     max-width:100%;  
-    max-height: 100%; 
-    
+    max-height: 100%;     
   }
 
   #background {
-    max-width: 96%;
+    width: 96%;
   }
 
   #facebook {
