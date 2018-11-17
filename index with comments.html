@@ -9,6 +9,10 @@
     <title>Pealeht</title>
 </head>
 <body>
+<!--
+    во-первых, прогони этот HTML через https://validator.w3.org/
+    он укажет тебе не ошибки в HTML'е) их немного, но их просто исправить, так что почему нет
+-->
     <div class="grid-container">
         <div class="grid-item">
             <a href="vektor.html"><div id="illustrator"></div></a>
@@ -44,7 +48,19 @@
             </div>
         </div>                 
     </div>
+    
+<!--
+    во-вторых, я посмотрела повнимательнее, и все три lottie-что-то.js скрипта
+    оказались минифицированной версией библиотеки анимации. 
+    даже если это никаких ошибок не вызывало, то смысла в этом все равно нет,
+    так что я оставила одну
+-->
     <script src="JS/lottieIllustrator.js"></script>
+    
+<!--
+    все кастомные скрипты я сложила в один файлик, сюда
+    больше комментариев там =) 
+-->
     <script src="JS/scriptIllustrator.js"></script>
 </body>
 </html>

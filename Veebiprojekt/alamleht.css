@@ -1,0 +1,482 @@
+body {
+    padding: 0;
+    margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.wrapper {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flex;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	font-weight: bold;
+}
+
+.wrapper > * {
+	padding: 10px;
+	flex: 1 100%;
+}
+
+/*....................navigation menu.................*/
+#navigation-wrapper {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	justify-content: flex-end;
+	list-style-type: none;
+	padding: 0 6% 0 0;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: #C1E23B;
+	color: white;
+	height: auto;	
+}
+
+#backtomain {
+	text-decoration: none;
+	margin-right:auto;
+	color: white;
+    font-size: 2em;
+    font-weight: bold;
+	padding-top: 12px;
+	padding-left: 21%;
+	width: 10em;
+	z-index: 998;
+}
+
+.navigation {
+	padding: 0;
+	margin: 0;
+}
+
+.right, .login {
+	background: #C1E23B;
+	border-style: solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 5px;	
+	margin: 12px 10px 12px 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+	display: inline-block;
+}
+
+.navigation a {
+	width: 60px;
+	padding: 8px 0 8px 0;
+	height: 20px;
+    text-decoration: none;
+    display: inline-grid;
+    color: white;
+    text-align: center;
+}
+
+.navigation .left a {
+	width: 300px;
+    text-align: left;
+}
+
+.navigation .login a {
+	width: 150px;
+}
+
+.navigation .right:hover, .login:hover {
+    background: #D6F658;
+}
+
+.navigation .right:active, .login:active {
+    background: #a5c71b;
+}
+
+
+/*..............logo................*/
+#logo {
+	padding: 0;
+    text-align: center;
+	margin-right: 80%;
+	position: relative;
+	z-index: 997;
+	margin-top: 25px;
+}
+
+#logo > img {
+	background-color: white;
+}
+
+#logo-lines {
+	border-top: 2px solid #D6F658;
+	border-bottom: 2px solid #D6F658;
+    position: relative;
+    z-index: 996;
+    margin-top: -41px;
+    height: 10px;
+    margin-right: 81%;
+}
+
+/*...................menu with thumbnails.................*/
+#menu-wrapper {
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flex;
+	display: flex;
+	list-style-type: none;
+	-webkit-flex-flow: row wrap;
+	margin-left: 19%;
+	margin-top: -69px;
+	margin-right: 0;
+}
+
+.button-and-img {
+	list-style-type: none;
+	padding: 0 5px 0 5px;
+	display: inline-block;
+}
+
+.menu-button {
+	display: inline-block;
+	background-color: #515151;
+	border-radius: 5px;	
+}
+
+.menu-button a {
+	width: 144px;
+	padding: 8px 0 8px 0;
+	height: 20px;
+    text-decoration: none;
+    display: inline-grid;
+    color: white;
+    text-align: center;
+}
+
+.menu-button a:hover {
+	background: #767676;
+	border-radius: 5px;
+}
+
+.menu-button a:active {
+	background: #00000a;
+	border-radius: 5px;
+	
+}
+/*...............content.........*/
+.content {
+	padding: 5px;
+	text-align: left;
+	font: Arial, Helvetica, Sans-serif;
+	font-size: 16px;
+	color: #515151;
+	font-weight: 300;
+	margin: 0 6% 0 20%;
+}
+
+h3 {
+	font-weight: 700;
+	color: #a5c71b;
+}
+
+.content-block-items {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0;
+	display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+
+}
+
+.content-block-items li {
+	display: inline-block;
+	margin-right: 10px;
+	position: relative; /*allows precise positioning of the popup image when used with position:absolute - see support section */
+	z-index: 0; /*resets the stack order of the list items - we'll increase in step 4. See support section for more info*/	
+}
+
+.content-block-items span{
+	position: absolute; 
+	display: none;
+	left: -9999px; /*moves the span off the page, effectively hidding it from view*/
+	-webkit-box-shadow: 0 0 40px rgba(0,0,0, .75);
+	-moz-box-shadow: 0 0 40px rgba(0,0,0, .75);
+	box-shadow: 0 0 40px rgba(0,0,0, .75);
+	padding: 10px;
+	font-family: 'Droid Sans', sans-serif;
+	font-size:.9em;
+	text-align: center; 
+	color: #515151; 
+	background-color:white;
+	border: 1px solid #a5c71b;
+}
+
+.content-block-items li:hover{
+	z-index: 999;
+	cursor: pointer;
+	display: block;
+}
+
+.content-block-items span img{
+	padding:2px;
+	background: #C1E23B;
+	width: 25vw;
+	height: auto;
+}
+	
+	/***We bring the large image back onto the page by reducing left from -9999px (set in step 2) to figures below***/ 
+.content-block-items li:hover span { /*positions the <span> when the <li> (which contains the thumbnail) is hovered*/ 
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%); /* сдвигаем элемент влево и вверх на половину своих ширины и высоты, потому что после left: 50%; на середине экрана оказывается левый край элемента*/
+	width: 26vw;
+	display: block;	
+}
+
+.process-description {
+	width: 300px;
+	vertical-align: top;
+}
+
+.content-block-items p{
+	overflow: hidden;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+}
+
+#info a {
+	text-decoration-color: #a5c71b;
+	color: #515151;	
+}
+
+#info a:hover {
+	color: #a5c71b;
+}
+
+
+/*................footer................*/
+.footer {
+	background: #C1E23B;
+	margin-top: 20px;
+	height: 64px;
+	padding: 0;
+	margin-bottom: 10px;
+	width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.footer p {
+	color: white;
+	text-align: left;
+	margin-left: 28%;
+	font: Arial, Sans-serif;
+	font-size: 15px;
+	font-weight: 100;
+	padding-top: 8px;
+}
+
+.social-media {
+	list-style: none;
+	float: left;
+	margin-left: 17.1%;
+	margin-top: 15px;	
+}
+
+.social-media li {
+	display: inline;
+	margin: 0 10px 0 0;
+}
+
+
+ /*............@media 1170px.........*/
+
+ @media all and (max-width: 1170px) {
+	#navigation-wrapper {
+		padding-right: 0;
+		flex-direction: column;
+		align-items: center;	
+	}
+
+	#backtomain {
+		order: 1;
+		padding-left: 0;
+		margin-right: 0; 
+		width: auto;
+	}
+
+	.navigation   {
+		order: 2;
+	}
+
+	.a,.b,.c {
+		flex: 0 0 30%;
+		align-items: flex-start;
+		order: 1;
+	}
+
+	.d,.e,.f {
+		flex: 0 0 30%;
+		justify-content: flex-start;
+		order: 2;	
+	}
+
+	.text {
+		margin: 0 20% 0 19%;
+	}
+
+	
+ }
+
+/*............@media 850px.........*/
+@media all and (max-width: 850px) {
+	.content {
+		max-width: 350px;
+	}
+	.process-description {
+		order: 1;
+		padding-bottom: 5px;
+    	padding-top: 8px;
+    	margin-top: 20px;
+    	border-top: 1px solid #a5c71b;
+	}
+
+	.image {
+		order: 2;
+	}
+
+	.content-block-items span img{
+		width: 49vw;
+	}
+
+	.content-block-items li:hover span {
+		width: 50vw;	
+	}
+}
+
+/*............@media 600px.........*/
+
+@media all and (max-width: 600px) {
+	#navigation-wrapper {
+		padding-right: 0;
+		flex-direction: column;
+		align-items: center;	
+	}
+
+	#backtomain {
+		order: 1;
+		padding-left: 0;
+		margin-right: 0; 
+		width: auto;
+	}
+
+	.navigation   {
+		order: 2;
+		margin: 10px 0 10px 0;	
+	}
+
+	.navigation a {
+		padding: 4px 0 4px 0;
+	}
+
+	.right, .login {
+		display: block;
+		padding-left: 60px;
+		padding-right: 60px;
+		text-align: center;
+		margin: 4px 0px 4px 0px;
+	}
+
+	.a,.b {
+		flex: 1 0 40%;
+		order: 1;
+	}
+
+	.c,.d {
+		flex: 1 0 40%;
+		order: 2;
+	}
+
+	.e,.f {
+		flex: 1 0 40%;
+		order: 3;
+	}
+
+	.a, .c, .e {
+		margin-left: 5%;
+	}
+
+	#logo {
+		margin: 0;
+	}
+	
+	#logo-lines {
+		margin-right: 0;
+	}
+	
+	#menu-wrapper {
+		margin-top: -20px;
+		margin-left: 7%
+	}
+
+	.content {
+		margin-left: 14%;
+	}
+
+	#info a{
+		word-break: break-all;
+	}
+
+	.footer {
+		height: 100px;
+	}
+
+	.social-media {
+		float: right;
+		margin-right: 40%;
+		order: 1;
+	}
+
+	.footer p {
+		margin-left: 0;
+		text-align: center;
+		padding-top: 54px;
+		order: 2;
+	}
+
+	.content-block-items span img{
+		width: 69vw;
+	}
+
+	.content-block-items li:hover span {
+		width: 70vw;	
+	}
+}
+
+/*............@media 480px.........*/
+
+@media all and (max-width: 480px) {
+	.menu-button a {
+		width: 110px;
+	}
+
+	#menu-wrapper {
+		margin-left: 5%;
+	}
+
+	.content {
+		max-width: 300px;
+	}
+
+}

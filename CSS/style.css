@@ -13,9 +13,15 @@ body {
   margin-bottom: -5px;
 }
 
-#video, #button {
-    max-width:860px;   
+#video {
+  max-width:860px;    
+  position: relative; 
   }
+
+#button {
+  height: 100%;
+  width: 100%;
+}
 
 #animMouseOut {
   z-index: 2;
@@ -25,7 +31,6 @@ body {
 #animOnHover {
   position: absolute;
   z-index: 3;
-  /*max-width: 48%;*/
   max-width: 100%;
 }
 
@@ -91,6 +96,7 @@ body {
  #video {
     max-width:100%;  
     max-height: 100%; 
+    
   }
 
   #background {

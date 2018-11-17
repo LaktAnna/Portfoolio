@@ -9,14 +9,17 @@ var illustratorAnimation = bodymovin.loadAnimation({
     prerender: true,
 })
 
-
+// Анимируем Иллюстратор
 document.getElementById('illustrator').addEventListener('mouseover', function(){ 
     illustratorAnimation.setDirection(1); 
     illustratorAnimation.play(); 
 })
 
 document.getElementById('illustrator').addEventListener('mouseleave', function(){ 
-z
+//  здесь у нас раньше было bodymovin.setDirection(-1), 
+//  что и вызывало ошибку, потому что оно меняло направление анимации для всей библиотеки анимации
+  
+//  теперь мы меняем направление только для той анимации, что нам нужна, и все хорошо =)
 illustratorAnimation.setDirection(-1); 
 illustratorAnimation.play(); 
 })
