@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Minu portfoolio v.1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Pealeht</title>
+</head>
+<body>
+<!--
+    во-первых, прогони этот HTML через https://validator.w3.org/
+    он укажет тебе не ошибки в HTML'е) их немного, но их просто исправить, так что почему нет
+-->
+    <div class="grid-container">
+        <div class="grid-item">
+            <a href="vektor.html"><div id="illustrator"></div></a>
+        </div>
+        <div class="grid-item">
+            <a href="video.html"><div id="video">
+                <div id="button" onmouseover="over()" onmouseout="out()">On-off button</div>
+                <div id="animOnHover"></div>
+                <div id="animMouseOut"></div>    
+            </div></a>
+        </div>
+        <div class="grid-item">
+            <a href="fotograafia.html"><div id="photo"></div></a>
+        </div>  
+        <div class="grid-item">
+            <a href="veeb.html"><div id="web"></div></a>
+        </div>
+        <div class="grid-item">
+            <a href="opingud.html"><div id="studies"></div></a>
+        </div>
+        <div class="grid-item">
+            <a href="kunst.html"><div id="kunst"></div></a>
+        </div>  
+        <div class="grid-item">
+            <a href="hobid.html"><div id="hobid"></div></a>
+        </div>
+        <div class="grid-item">
+            <div id="kontakt">
+                <img id="background" src="CARD8\Background.png">
+                <a href="https://www.facebook.com/meeltelemmik/" target="_blank"><img id="facebook" src="CARD8\Facebook logo.png"></a>
+                <a href="https://www.instagram.com/anmy_visuals/" target="_blank"><img id="instagram" src="CARD8\Instagram logo.png"></a>
+                <a href="kontakt.html"><img id="gmail" src="CARD8\Gmail logo.png" ></a>
+            </div>
+        </div>                 
+    </div>
+    
+<!--
+    во-вторых, я посмотрела повнимательнее, и все три lottie-что-то.js скрипта
+    оказались минифицированной версией библиотеки анимации. 
+    даже если это никаких ошибок не вызывало, то смысла в этом все равно нет,
+    так что я оставила одну
+-->
+    <script src="JS/lottieIllustrator.js"></script>
+    
+<!--
+    все кастомные скрипты я сложила в один файлик, сюда
+    больше комментариев там =) 
+-->
+    <script src="JS/scriptIllustrator.js"></script>
+</body>
+</html>
