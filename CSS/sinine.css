@@ -43,7 +43,7 @@ img {
 .text-link {
     text-decoration: none;
     box-shadow: inset 0 -2px 0 #819EA0;
-    color: #521711;
+    color: rgb(26, 64, 66);
 }
 
 .img-link {
