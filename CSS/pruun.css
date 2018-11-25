@@ -15,6 +15,58 @@ body {
     margin-bottom: -5px;
 }
 
+/*-----------Dropdown menu-----------*/
+
+.menu-button {
+    position: fixed;
+    left: 0;
+    width: 100px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #A04E3E;
+    z-index: 6;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 239, 238);
+    box-shadow: 5px 10px 21px rgba(99, 27, 21, 0.356);
+    z-index: 3;
+    margin-left: 0px;
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 2% 2em 10% 0;
+}
+
+a:hover {
+    color: rgb(206, 126, 110);
+}
+
+.menu-button:hover .dropdown-menu {
+    display: block;
+}
+
+.menu-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #A04E3E;
+    font-size: 1.3vw;
+}
+
+
+/* -----------Home button--------*/
+
 .button-home {
     position: fixed;
     z-index: 5;
@@ -92,6 +144,17 @@ z-index:1;
  }
 
  @media screen and (max-width: 500px) {
+     /*-----------Dropdown menu----------*/
+     li {
+        padding: 2% 2em 10% 0;
+    }
+
+    .menu-link {
+        font-size: 4vw;
+    }
+
+
+     /*-----------Content------------*/
 	.grid-container {
         grid-template-columns: 100%;
         grid-row-gap: 0.5em;
