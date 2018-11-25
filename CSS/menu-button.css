@@ -1,0 +1,155 @@
+/*-----------Dropdown menu-----------*/
+
+.menu-button {
+    position: fixed;
+    left: 0;
+    width: 100px;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #A04E3E;
+    z-index: 6;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 239, 238);
+    box-shadow: 5px 10px 21px rgba(99, 27, 21, 0.356);
+    z-index: 3;
+    margin-left: 0px;
+    margin-top: 0;
+    white-space: nowrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 2% 2em 10% 0;
+}
+
+a:hover {
+    color: rgb(206, 126, 110);
+}
+
+.menu-button:hover .dropdown-menu {
+    display: block;
+}
+
+.menu-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #A04E3E;
+    font-size: 1.3vw;
+}
+
+
+/* -----------Home button--------*/
+
+.button-home {
+    position: fixed;
+    z-index: 5;
+    margin-left:-20px;
+    left:50%;
+    width:100px;
+    top:0px;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #A04E3E;
+}
+
+
+
+body {
+    background-color: rgb(255, 239, 238);
+    padding: 0;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-row-gap: 2em;
+}
+
+.grid-item {
+    max-width: 100%;
+    margin-bottom: -5px;
+}
+
+
+
+p {
+    padding: 5% 5%;
+    font-family: 'Arimo', Arial, sans-serif;
+    font-size: 1.5vw;
+    color: #521711;
+}
+
+img { 
+    box-shadow: 5px 10px 21px #521711;
+    max-width: 100%;
+}
+
+
+.img-link {
+    text-decoration: none;
+}
+
+#bottom-line {
+    height: 1em;
+    color: rgb(229, 241, 243);
+}
+
+.button-up{
+    position: fixed; 
+    margin-left:-20px;
+    left:50%;
+    width:100px;
+    bottom:0px;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #A04E3E;
+    z-index: 4;
+ }
+
+ @media screen and (max-width: 500px) {
+     /*-----------Dropdown menu----------*/
+     li {
+        padding: 2% 2em 10% 0;
+    }
+
+    .menu-link {
+        font-size: 4vw;
+    }
+
+
+     /*-----------Content------------*/
+	.grid-container {
+        grid-template-columns: 100%;
+        grid-row-gap: 0.5em;
+    }
+
+    p {
+        padding: 5% 3% 0 3%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3vw;
+        margin-bottom: 0.5em;
+    }
+
+    .video { 
+        box-shadow: 0px 14px 21px #521711;
+    }
+
+
+
+
+ }
