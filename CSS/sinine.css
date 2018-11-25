@@ -13,8 +13,9 @@ body {
     top: 0px;
     width: 0;
     height: 0;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #819e9f;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-left: 20px solid #819e9f;
     z-index: 6;
 }
 
