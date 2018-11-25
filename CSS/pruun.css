@@ -4,17 +4,6 @@ body {
     margin: 0;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 50% 50%; 
-    grid-row-gap: 2em;
-}
-
-.grid-item {
-    max-width: 100%;
-    margin-bottom: -5px;
-}
-
 /*-----------Dropdown menu-----------*/
 
 .menu-button {
@@ -65,6 +54,20 @@ a:hover {
 }
 
 
+/*------------Grid------------*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%; 
+    grid-row-gap: 2em;
+}
+
+.grid-item {
+    max-width: 100%;
+    margin-bottom: -5px;
+}
+
+
 /* -----------Home button--------*/
 
 .button-home {
@@ -80,6 +83,8 @@ a:hover {
     border-right: 20px solid transparent;
     border-top: 20px solid #A04E3E;
 }
+
+/*-----------------------*/
 
 p {
     padding: 5% 5%;
@@ -145,7 +150,7 @@ z-index:1;
 
  @media screen and (max-width: 500px) {
      /*-----------Dropdown menu----------*/
-     li {
+    li {
         padding: 2% 2em 10% 0;
     }
 
