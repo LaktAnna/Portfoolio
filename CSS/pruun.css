@@ -31,12 +31,10 @@ body {
 
 ul {
     list-style-type: none;
-    display: none;
 }
 
 li {
     padding: 2% 2em 10% 0;
-    display: none;
 }
 
 a:hover {
@@ -104,7 +102,6 @@ img {
     box-shadow: 5px 10px 21px #521711;
     position: relative;
     padding-bottom: 56.25%;
-    /*padding-top: 30px; */
     height: 0; 
     overflow: hidden;
     z-index: 3;
