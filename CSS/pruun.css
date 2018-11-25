@@ -31,10 +31,12 @@ body {
 
 ul {
     list-style-type: none;
+    display: none;
 }
 
 li {
     padding: 2% 2em 10% 0;
+    display: none;
 }
 
 a:hover {
