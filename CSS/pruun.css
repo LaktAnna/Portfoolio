@@ -8,14 +8,15 @@ body {
 
 .menu-button {
     position: fixed;
-    left: 0;
-    width: 100px;
-    top: 0px;
-    width: 0;
-    height: 0;
-    border-bottom: 20px solid transparent;
-    border-top: 20px solid transparent;
-    border-left: 20px solid #A04E3E;
+    margin-left:-20px;
+    left:50%;
+    width:100px;
+    top:0px;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #A04E3E;
     z-index: 6;
 }
 
@@ -25,8 +26,8 @@ body {
     background-color: rgb(255, 239, 238);
     box-shadow: 5px 10px 21px rgba(99, 27, 21, 0.356);
     z-index: 3;
-    margin-left: 0px;
-    margin-top: 0;
+    margin-top: -10px;
+    transform: translate(-50%, 0);
     white-space: nowrap;
 }
 
