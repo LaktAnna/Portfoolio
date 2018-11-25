@@ -82,8 +82,6 @@ p {
     text-align: center;
 }
 
-
-
 .button-up{
     position:absolute; 
     margin-left:-20px;
@@ -96,3 +94,13 @@ p {
     border-right: 20px solid transparent;
     border-bottom: 20px solid #A04E3E;
  }
+
+ @media screen and (max-width: 500px) {
+    /*-----------Dropdown menu----------*/
+   li {
+       padding: 2% 2em 10% 0;
+   }
+
+   .menu-link {
+       font-size: 4vw;
+   }
