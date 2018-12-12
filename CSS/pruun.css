@@ -162,6 +162,10 @@ z-index:1;
     .video { 
         box-shadow: 0px 14px 21px #521711;
     }
+
+    .button-up {
+        bottom: -5px;
+    }
  }
 
     
