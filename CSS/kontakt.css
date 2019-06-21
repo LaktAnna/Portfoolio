@@ -11,16 +11,20 @@ body {
 
 .menu-button {
     position: fixed;
-    margin-left:-20px;
+    margin-left:-30px;
     left:50%;
-    width:100px;
+    width:60px;
     top:0px;
-    width: 0; 
+    /*width: 0; 
     height: 0; 
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 20px solid #A04E3E;
+    border-top: 20px solid #A04E3E;*/
     z-index: 6;
+}
+
+.no-shadow img {
+    box-shadow: none !important;
 }
 
 .dropdown-menu {
@@ -30,7 +34,7 @@ body {
     box-shadow: 5px 10px 21px rgba(21, 83, 99, 0.356);
     z-index: 3;
     margin-top: -10px;
-    transform: translate(-50%, 0);
+    transform: translate(-40%, 0);
     white-space: nowrap;
 }
 
@@ -85,16 +89,16 @@ p {
 }
 
 .button-up{
-    position:absolute; 
-    margin-left:-20px;
-    left:50%;
-    width:100px;
-    bottom:0px;
-    width: 0; 
-    height: 0; 
+    position: fixed; 
+    margin-left: -30px;
+    left: 50%;
+    width: 60px;
+    bottom: -4px;
+    /*height: 0; 
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom: 20px solid #A04E3E;
+    border-bottom: 20px solid #A04E3E;*/
+    z-index: 4;
  }
 
  @media screen and (max-width: 500px) {
